@@ -20,7 +20,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black px-4 md:px-8 py-4 text-white w-full overflow-x-hidden">
+    <nav className="bg-black px-4 md:px-8  text-white w-full overflow-x-hidden">
       <div className="flex justify-between items-center flex-nowrap">
         {/* Logo */}
         <div className="flex items-center space-x-2 flex-shrink-0">

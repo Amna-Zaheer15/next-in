@@ -34,7 +34,7 @@ const About = () => {
 
       {/* Expert Teachers */}
       <section className="py-16 px-4 md:px-20">
-        <h2 className="text-4xl font-bold text-[#016fbe] text-center mb-10">Meet Our Expert Teachers</h2>
+        <h2 className="text-4xl font-bold text-[#016fbe] text-center mb-10">Meet Our Expert Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {teachers.map(t => (
             <div key={t.name} className="bg-white rounded-xl shadow-md p-6 text-center">
