@@ -1,15 +1,10 @@
-
-
-
-// App.jsx
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Component/Layout';
-import Home from './Component/Home';
-import About from './Component/About';
-import Services from './Component/Services';
-import Course from './Component/Course';
-import Contact from './Component/Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Course from './pages/Course';
+import Contact from './pages/Contact';
 
 function App() {
   return (

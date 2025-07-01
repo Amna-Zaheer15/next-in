@@ -1,5 +1,4 @@
-import React from 'react';
-import Home1 from './Home1.jpg'; // Replace with your actual hero image
+import Home1 from '../images/Home1.jpg'; 
 
 const ContactUs = () => {
   return (

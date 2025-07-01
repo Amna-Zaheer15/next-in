@@ -1,21 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Home1 from './Home1.jpg';
-import Angular from './Angular.jpg';
-import Frontend from './Frontend.jpg';
-import ReactImg from './ReactImg.jpg';
-import nextjs from './nextjs.jpg';
-import Backend from './Backend.jpg';
-import php2 from './php2.jpg';
-import DB1 from './DB1.jpg';
-import Symfony from './Symfony.jpg';
-import laravel from './laravel.jpg';
-import SEOImage from './SEOImage.jpg';
-import wordpress from './wordpress.png';
-import GraphicDesign from './GraphicDesign.jpg';
-import digitalMarketing from './digitalMarketing.webp';
-import MobileApp from './MobileApp.jpg';
-import WebHosting from './WebHosting.jpg';
+import Home1 from '../images/Home1.jpg';
+import Angular from '../images/Angular.jpg';
+import Frontend from '../images/Frontend.jpg';
+import ReactImg from '../images/ReactImg.jpg';
+import nextjs from '../images/nextjs.jpg';
+import Backend from '../images/Backend.jpg';
+import php2 from '../images/php2.jpg';
+import DB1 from '../images/DB1.jpg';
+import Symfony from '../images/Symfony.jpg';
+import laravel from '../images/laravel.jpg';
+import SEOImage from '../images/SEOImage.jpg';
+import wordpress from '../images/wordpress.png';
+import GraphicDesign from '../images/GraphicDesign.jpg';
+import digitalMarketing from '../images/digitalMarketing.webp';
+import MobileApp from '../images/MobileApp.jpg';
+import WebHosting from '../images/WebHosting.jpg';
 
 
 // ✅ Course list
@@ -119,58 +117,11 @@ const getFirstThreeWords = (title) => {
 };
 
 const Courses = () => {
-  const [current, setCurrent] = useState(0);
-  const total = courses.length;
 
-  const nextSlide = () => setCurrent((current + 1) % total);
-  const prevSlide = () => setCurrent((current - 1 + total) % total);
-
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
-      {/* Hero Section */}
-      <section className="relative w-full px-4 md:px-20 py-20 bg-gradient-to-br from-[#016fbe] via-[#0483e4] to-[#025fa0] text-white">
-        <div
-          className="absolute inset-0 opacity-10 bg-cover bg-center"
-          style={{ backgroundImage: `url(${Home1})` }}
-        ></div>
-
-        <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between text-center md:text-left space-y-10 md:space-y-0 md:space-x-10">
-          <div className="md:w-1/2 space-y-6">
-            <h1 className="text-5xl font-extrabold leading-tight">Explore Our Courses</h1>
-            <p className="text-lg leading-relaxed max-w-xl">
-              NextIn offers a wide range of professional courses designed to equip you with cutting-edge tech skills and real-world experience.
-            </p>
-          </div>
-
-          {/* Slider Section */}
-          <div className="relative w-full md:w-1/2">
-            <button
-              onClick={prevSlide}
-              className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-[#016fbe] text-white p-2 rounded-full shadow-lg z-20"
-            >
-              <ChevronLeft size={24} />
-            </button>
-
-            <div className="text-white rounded-xl overflow-hidden shadow-lg flex flex-col items-center text-center p-6">
-              <h3 className="text-xl font-bold mb-1">{courses[current].title}</h3>
-              <span className="text-xs font-medium text-white mb-1">Duration: {courses[current].duration}</span>
-              <p className="text-sm leading-relaxed">{courses[current].desc}</p>
-            </div>
-
-            <button
-              onClick={nextSlide}
-              className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-[#016fbe] text-white p-2 rounded-full shadow-lg z-20"
-            >
-              <ChevronRight size={24} />
-            </button>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Course Cards Grid */}
       <section className="py-16 px-4 md:px-20">

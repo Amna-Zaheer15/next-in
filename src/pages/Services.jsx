@@ -1,9 +1,8 @@
-import React from 'react';
-import Home1 from './Home1.jpg';
-import WebImg2 from './WebImg2.jpeg';
-import MobileImg from './MobileImg.jpeg';
-import GameImg from './GameImg.jpeg';
-import Seo2 from './Seo2.jpeg';
+import Home1 from '../images/Home1.jpg';
+import WebImg2 from '../images/WebImg2.jpeg';
+import MobileImg from '../images/MobileImg.jpeg';
+import GameImg from '../images/Seo2.jpeg';
+import Seo2 from '../images/Seo2.jpeg';
 
 const services = [
   {
@@ -91,7 +90,7 @@ const Services = () => (
           <div className="md:w-1/2">
             <img
               src={image}
-              alt={`NextIn - ${title} image`}
+              alt=''
               className="rounded-lg shadow-md w-full h-60 object-cover"
             />
           </div>

@@ -1,6 +1,5 @@
-import React from 'react';
-import Teacher from './Teacher.jpeg';
-import Home1 from './Home1.jpg';
+import Teacher from '../images/Teacher.jpeg';
+import Home1 from '../images/Home1.jpg';
 
 const teachers = [
   { name: 'Alice Johnson', role: 'Web Dev Instructor', img: Teacher },

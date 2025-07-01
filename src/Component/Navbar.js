@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NextInlogo from './NextInlogo.png';
+import NextInlogo from '../images/NextInlogo.png';
 import { Link } from 'react-router-dom';
 import {
   FaPhoneAlt,

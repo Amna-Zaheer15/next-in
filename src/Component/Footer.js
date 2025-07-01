@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   FaPhoneAlt,
@@ -8,7 +7,7 @@ import {
   FaLinkedinIn,
   FaInstagram
 } from 'react-icons/fa';
-import NextInlogo from './NextInlogo.png';
+import NextInlogo from '../images/NextInlogo.png';
 
 const Footer = () => (
   <footer className="bg-black text-gray-400 py-10 px-6 md:px-20">
