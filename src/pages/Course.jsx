@@ -16,38 +16,35 @@ import GraphicDesign from '../images/GraphicDesign.jpg';
 import digitalMarketing from '../images/digitalMarketing.webp';
 import MobileApp from '../images/MobileApp.jpg';
 import WebHosting from '../images/WebHosting.jpg';
+import banner1 from '../images/banner1.jpg';
+import banner2 from '../images/banner2.jpeg';
+import banner3 from '../images/banner3.jpeg';
+import banner4 from '../images/banner4.jpeg';
 
 // Banner data
 const bannerImages = [
   {
-    img: Frontend,
+    img: banner1,
     title: 'Master Web Development',
-    subtitle: 'Start your journey with our comprehensive courses',
-    cta: 'Explore Courses',
-    ctaLink: '#courses'
+    subtitle: 'Start your journey with our comprehensive courses'
   },
   {
-    img: ReactImg,
+    img: banner2,
     title: 'Become a React Expert',
-    subtitle: 'Learn from industry professionals with real-world projects',
-    cta: 'View React Course',
-    ctaLink: '#courses'
+    subtitle: 'Learn from industry professionals with real-world projects'
   },
   {
-    img: Backend,
+    img: banner3,
     title: 'Full-Stack Development',
-    subtitle: 'Frontend to backend - complete training package',
-    cta: 'Learn More',
-    ctaLink: '#courses'
+    subtitle: 'Frontend to backend - complete training package'
   },
   {
-    img: MobileApp,
+    img: banner4,
     title: 'Mobile App Development',
-    subtitle: 'Build cross-platform apps with React Native',
-    cta: 'Discover Mobile Courses',
-    ctaLink: '#courses'
+    subtitle: 'Build cross-platform apps with React Native'
   }
 ];
+
 
 // Course list
 const courses = [
@@ -185,7 +182,7 @@ const Courses = () => {
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
       {/* Banner Slider */}
-      <section className="relative h-[200px] md:h-[350px] w-full overflow-hidden bg-gray-100">
+      <section className="relative h-[200px] md:h-[480px] w-full overflow-hidden bg-gray-100">
         {/* Slides */}
         <div 
           className="flex h-full transition-transform duration-700 ease-in-out"
@@ -210,12 +207,7 @@ const Courses = () => {
                   <p className="text-lg md:text-2xl text-white mb-8 animate-fadeIn delay-100">
                     {banner.subtitle}
                   </p>
-                  <a
-                    href={banner.ctaLink}
-                    className="inline-block bg-[#016fbe] hover:bg-[#015a9a] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 animate-fadeIn delay-200"
-                  >
-                    {banner.cta}
-                  </a>
+                  
                 </div>
               </div>
             </div>
