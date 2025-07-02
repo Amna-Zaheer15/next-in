@@ -5,6 +5,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Course from './pages/Course';
 import Contact from './pages/Contact';
+import EnrollForm from './pages/EnrollForm';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="services" element={<Services />} />
 
           <Route path="contact" element={<Contact />} />
+          <Route path="/enroll" element={<EnrollForm />} />
           {/* Add more pages here */}
         </Route>
       </Routes>

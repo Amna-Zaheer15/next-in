@@ -16,35 +16,38 @@ import GraphicDesign from '../images/GraphicDesign.jpg';
 import digitalMarketing from '../images/digitalMarketing.webp';
 import MobileApp from '../images/MobileApp.jpg';
 import WebHosting from '../images/WebHosting.jpg';
-import banner1 from '../images/banner1.jpg';
-import banner2 from '../images/banner2.jpeg';
-import banner3 from '../images/banner3.jpeg';
-import banner4 from '../images/banner4.jpeg';
 
 // Banner data
 const bannerImages = [
   {
-    img: banner1,
+    img: Frontend,
     title: 'Master Web Development',
-    subtitle: 'Start your journey with our comprehensive courses'
+    subtitle: 'Start your journey with our comprehensive courses',
+    
+    ctaLink: '#courses'
   },
   {
-    img: banner2,
+    img: ReactImg,
     title: 'Become a React Expert',
-    subtitle: 'Learn from industry professionals with real-world projects'
+    subtitle: 'Learn from industry professionals with real-world projects',
+  
+    ctaLink: '#courses'
   },
   {
-    img: banner3,
+    img: Backend,
     title: 'Full-Stack Development',
-    subtitle: 'Frontend to backend - complete training package'
+    subtitle: 'Frontend to backend - complete training package',
+  
+    ctaLink: '#courses'
   },
   {
-    img: banner4,
+    img: MobileApp,
     title: 'Mobile App Development',
-    subtitle: 'Build cross-platform apps with React Native'
+    subtitle: 'Build cross-platform apps with React Native',
+  
+    ctaLink: '#courses'
   }
 ];
-
 
 // Course list
 const courses = [
@@ -182,7 +185,7 @@ const Courses = () => {
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
       {/* Banner Slider */}
-      <section className="relative h-[200px] md:h-[480px] w-full overflow-hidden bg-gray-100">
+      <section className="relative h-[200px] md:h-[350px] w-full overflow-hidden bg-gray-100">
         {/* Slides */}
         <div 
           className="flex h-full transition-transform duration-700 ease-in-out"
@@ -207,7 +210,7 @@ const Courses = () => {
                   <p className="text-lg md:text-2xl text-white mb-8 animate-fadeIn delay-100">
                     {banner.subtitle}
                   </p>
-                  
+
                 </div>
               </div>
             </div>

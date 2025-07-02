@@ -5,7 +5,8 @@ import {
   FaMapMarkerAlt,
   FaFacebookF,
   FaLinkedinIn,
-  FaInstagram
+  FaInstagram,
+  FaWhatsapp
 } from 'react-icons/fa';
 import NextInlogo from '../images/NextInlogo.png';
 
@@ -46,16 +47,16 @@ const Footer = () => (
       </div>
 
       {/* Contact Info */}
-      <div className="flex flex-col items-center md:items-start">
-        <h5 className="font-semibold text-white mb-3">Contact Us</h5>
+      <div className="flex flex-col sm-items-center  text-left md:items-start">
+        <h5 className="font-semibold sm-items-start text-white mb-3">Contact Us</h5>
         <ul className="space-y-3 text-sm">
           <li className="flex items-center justify-center md:justify-start gap-2">
             <FaEnvelope className="text-[#016fbe]" />
-            <span>hr@nextin.com</span>
+            <span>infonextin721@gmail.com</span>
           </li>
           <li className="flex items-center justify-center md:justify-start gap-2">
             <FaPhoneAlt className="text-[#016fbe]" />
-            <span>+92 (0300) 1234567</span>
+            <span>+92 (3059272375)</span>
           </li>
           <li className="flex items-center justify-center md:justify-start gap-2">
             <FaMapMarkerAlt className="text-[#016fbe]" />
@@ -68,6 +69,7 @@ const Footer = () => (
           <a href="#" className="hover:text-[#016fbe]"><FaFacebookF /></a>
           <a href="#" className="hover:text-[#016fbe]"><FaLinkedinIn /></a>
           <a href="#" className="hover:text-[#016fbe]"><FaInstagram /></a>
+          <a href="#" className="hover:text-[#016fbe]"><FaWhatsapp /></a>
         </div>
       </div>
     </div>
