@@ -82,10 +82,10 @@ const Home = () => {
   return (
     <div className="bg-white text-gray-800 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-20 py-16 md:py-20">
+      <section className="flex flex-col md:flex-row items-center justify-between px-2 sm:px-6 md:px-20  md:py-20 border">
         <div className="md:w-1/2 space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#016fbe]">
-            Empower Your Business with Cutting‑Edge Solutions
+           Ignite Your Future with the Spark of Our Innovation
           </h1>
           <p className="text-lg font-semibold uppercase text-[#016fbe]">Your Complete IT Partner</p>
           <p className="text-gray-700">
@@ -96,7 +96,7 @@ const Home = () => {
           </button>
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0">
-          <img src={Home1} alt="Hero" className="w-full h-auto rounded-lg shadow-lg" />
+          <img src={Home1} alt="Hero" className="w-full h-auto " />
         </div>
       </section>
 
